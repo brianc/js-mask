@@ -5,10 +5,8 @@ endif
 
 " remove the keywords. we'll re-add them below
 syntax clear jsFunction
-syntax match jsFunction /\<function\>/ nextgroup=javaScriptFuncName skipwhite conceal cchar=λ 
+syntax match   jsFunction       /\<function\>/ nextgroup=jsFuncName,jsFuncArgs skipwhite conceal cchar=ƒ
 
 hi! link Conceal jsFunction
 
 set conceallevel=2
-
-
