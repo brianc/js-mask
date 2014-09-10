@@ -4,7 +4,6 @@ if !has('conceal')
 endif
 
 " remove the keywords. we'll re-add them below
-syntax clear javaScriptFunction
 syntax match javaScriptFunction /\<function\>/ nextgroup=javaScriptFuncName skipwhite conceal cchar=λ 
 " syntax match javaScriptFunctionNoParams /function()/ conceal cchar=λ 
 
